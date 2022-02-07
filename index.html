@@ -1,0 +1,51 @@
+<!DOCTYPE html> <html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mini Project!</title>
+
+    <script src="/script.js" defer=""></script>
+  <style>.picture {
+    /*
+    Lay the picture containers out one after the other. (To see why
+    this line is important, try changing it to 'block' or 'inline'.)
+    */
+    display: block;
+
+    /* add a little space between each picture and the next */
+    margin: 10px;
+}
+
+.gallery img {
+    /*
+    The original images are all different sizes but we need
+    them to be consistent for the gallery layout to look good.
+    */
+    height: 200px;
+
+    /* add an outline around each picture */
+    border: 3px double black;
+}
+
+.gallery p {
+    text-align: center;
+    margin-top: 0;
+}
+body{
+    text-align:center;
+    background:url(https://ae01.alicdn.com/kf/HTB1NazrRXXXXXbRXFXXq6xXFXXXU/HUAYI-New-Arrival-Photography-Backdrop-Food-Product-photography-background-Dark-old-wood-floordrop-shabby-wooden-backdrop.jpg);
+    color:white;
+}</style></head>  
+  <body>
+        <h1>Types of Desserts!</h1>
+        
+        <!-- The gallery container. It is empty until the Javascript runs. -->
+        <div class="gallery">
+        </div>
+        
+        <!-- The user can add a new food item here -->
+        <p>New picture: <input class="picture-url" size="60"></p>
+        <button class="add">Add</button>
+  
+</body></html>
